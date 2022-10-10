@@ -163,7 +163,7 @@ client.commands.on('reject', async (source, info) => {
       break;
   }
 
-  await source.update({ embeds: [helper] });
+  return await source.update({ embeds: [helper] });
 });
 /**/
 
